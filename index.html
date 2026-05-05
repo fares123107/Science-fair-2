@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lactase Experiment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Experiment: Lactase and Glucose Production in Dairy Products</h1>
+    </header>
+
+    <section id="background">
+        <h2>Background Information</h2>
+        <p>Lactose is the main sugar found in dairy products such as milk, yogurt, and cheese. It is a disaccharide composed of glucose and galactose. To be absorbed, lactose needs to be broken down by the enzyme lactase, which catalyzes the hydrolysis of lactose into glucose and galactose.</p>
+        <p>Enzymes are biological catalysts that speed up chemical reactions. When lactase is added to dairy products, lactose is hydrolyzed into glucose and galactose. The presence of glucose can be detected using glucose strips that change color based on glucose concentration.</p>
+        <p>Different dairy products contain varying amounts of lactose: milk has the highest (~4.8%), yogurt has less due to bacterial fermentation, and cheese has very little (<1%) as lactose is removed during production.</p>
+        <h3>Research Question</h3>
+        <p>To what extent does increasing the lactose in different dairy products (milk, yogurt, cheese) affect the amount of glucose produced?</p>
+        <h3>Hypothesis</h3>
+        <p><strong>Null Hypothesis:</strong> There will be no difference in the amount of glucose produced when lactase is added to milk, yogurt, and cheese.</p>
+        <p><strong>Alternative Hypothesis:</strong> Milk will produce the highest glucose concentration, yogurt moderate, and cheese the lowest when lactase is added.</p>
+        <p><strong>Scientific Reasoning:</strong> Due to varying lactose levels in the products, higher lactose leads to more glucose upon hydrolysis.</p>
+    </section>
+
+    <section id="experiment">
+        <h2>Virtual Experiment</h2>
+        <p>Follow the steps to perform the experiment: Measure the dairy sample, add lactase, stir, wait for the reaction, and test for glucose. Repeat for each trial.</p>
+        <div id="lab">
+            <label for="dairy-select">Choose Dairy Product:</label>
+            <select id="dairy-select">
+                <option value="">Select...</option>
+                <option value="milk">Milk</option>
+                <option value="yogurt">Yogurt</option>
+                <option value="cheese">Cheese</option>
+            </select>
+            <button id="measure">Measure 20ml</button>
+            <button id="add-lactase">Add 2 Drops of Lactase</button>
+            <button id="stir">Stir Gently</button>
+            <button id="wait">Wait 10 Minutes</button>
+            <button id="test-glucose">Test Glucose</button>
+            <div id="glucose-result"></div>
+            <div id="timer"></div>
+        </div>
+        <div id="results-table">
+            <h3>Results</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dairy Product</th>
+                        <th>Trial 1</th>
+                        <th>Trial 2</th>
+                        <th>Trial 3</th>
+                        <th>Average</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>Based on the virtual experiment, the results support the alternative hypothesis: milk produces the highest glucose, followed by yogurt, then cheese, due to their lactose content.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
